@@ -1,0 +1,200 @@
+<html>
+  <head>
+    <title>Formular</title>
+	 
+	  
+    <style>
+      html, body {
+      min-height: 100%;
+	  
+      } 
+      body, div, form, input, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+	  
+      color: #802E93;
+      line-height: 22px;
+	  background-color: LightGray;
+	  font-weight: bold;
+      }
+      h1 {
+      font-weight: 400;
+      }
+      .testbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+	   color: #14C8DB;
+      height: inherit;
+      padding: 3px;
+      }
+      form {
+      width: 100%;
+      padding: 20px;
+      background: #fff;
+	   color: #802E93;
+      box-shadow: 0 2px 5px #ccc; 
+      }
+      input {
+      width: calc(100% - 10px);
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+	  color: #0DD8CE;
+	  font-weight:bold;
+      vertical-align: middle;
+      }
+      input:hover, textarea:hover {
+      outline: none;
+	   color: yellow;
+      border: 1px solid #0489B1;
+      }
+      th, td {
+      width: 28%;
+      padding: 15px 0;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+      vertical-align: unset;
+	   color: brown;
+      line-height: 18px;
+      font-weight: 400;
+      word-break: break-all;
+      }
+      .first-col {
+      width: 16%;
+      text-align: left;
+      }
+      textarea:hover {
+      outline: none;
+	   color: orange;
+      border: 1px solid #FE2E64;
+      }
+      table {
+      width: 100%;
+      }
+      textarea {
+      width: calc(100% - 6px);
+      }
+      .question {
+      padding: 15px 0 5px;
+      color: #070707;
+	  font-weight:bold;
+      }
+      .question-answer label {
+      display: block;
+      padding: 0 20px 10px 0;
+      }
+      .question-answer input {
+      width: auto;
+      }
+      .btn-block {
+      margin-top: 20px;
+      text-align: center;
+      }
+      button {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      -webkit-border-radius: 5px; 
+      -moz-border-radius: 5px; 
+      border-radius: 5px; 
+	   color: orange;
+      background-color: #4000FF;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      }
+      button:hover {
+      background-color: #00FFFF;
+      }
+      @media (min-width: 568px) {
+      th, td {
+      word-break: keep-all;
+      }
+      }
+    </style>
+  </head>
+  <body>
+  
+    <div class="testbox">
+      <form action="mailto:maria.caramida00@e-uvt.ro" method="post" enctype="text/plain">
+        <h1>Formular "Hai să călătorim"</h1>
+        <p class="question">Este prima dată când vii pe pagina noastră?</p>
+        <div class="question-answer">
+          <label><input type="radio" value="Este prima dată când vii pe pagina noastră?" name="da" /> Da</label>
+          <label><input type="radio" value="Este prima dată când vii pe pagina noastră?" name="nu" /> Nu</label>
+        </div>
+        <p class="question">Ce părere ți-a lăsat?/Cum ți s-a părut?</p>
+        <textarea rows="5"></textarea>
+        <p class="question">Ai idei de locuri de călătorit?</p>
+        <div class="question-answer">
+          <label><input type="radio" value="Ai idei de locuri de călătorit?" name="da" /> Da</label>
+          <label><input type="radio" value="Ai idei de locuri de călătorit?" name="nu" /> Nu</label>
+         
+        </div>
+        <p class="question"> Te rog, să ne transmiți locurile la care te-ai gândit.</p>
+        <textarea rows="5"></textarea>
+		<BR>
+<BR>
+Încarcă o fotografie cu zona dacă ai mai vizitat-o<br>
+<input type="hidden" name="" value="100" /> <input name="file" type="file" />
+<BR>
+<BR>
+        <p class="question">Cum ți s-a părut informația găsită la noi pe site?</p>
+        <div class="question-answer">
+          <label><input type="radio" value="Cum ti s-a parut informatia gasita la noi pe site?" name="util" /> Utilă</label>
+          <label><input type="radio" value="Cum ti s-a parut informatia gasita la noi pe site?" name="interesant" /> Interesantă</label>
+          <label><input type="radio" value="Cum ti s-a parut informatia gasita la noi pe site?" name="dificil" /> Dificilă</label>
+          <label><input type="radio" value="Cum ti s-a parut informatia gasita la noi pe site?" name="fdificl" /> Foarte dificilă</label>
+   
+        </div>
+        <p class="question">Acest blog ți-a atins așteptările?</p>
+        <table>
+          <tr>
+            <th class="first-col"></th>
+            <th>Nu mi-a atins așteptările</th>
+            <th>Mi-a atins așteptările</th>
+            <th>Mi-a depășit așteptările</th>
+          </tr>
+          <tr>
+            <td class="first-col">Profesionale</td>
+            <td><input type="radio" value="Profesionale" name="sub" /></td>
+            <td><input type="radio" value="Profesionale" name="atins" /></td>
+            <td><input type="radio" value="Profesionale" name="depasit" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">Informative</td>
+             <td><input type="radio" value="Informative" name="sub" /></td>
+            <td><input type="radio" value="Informative" name="atins" /></td>
+            <td><input type="radio" value="Informative" name="depasit" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">Vizuale</td>
+             <td><input type="radio" value="Vizuale" name="sub" /></td>
+            <td><input type="radio" value="Vizuale" name="atins" /></td>
+            <td><input type="radio" value="Vizuale" name="depasit" /></td>
+          </tr>
+        </table>
+        <p class="question">Care este probabilitatea să vizitezi acest site?</p>
+        <div class="question-answer">
+          <label><input type="radio" value="Care este probabilitatea sa vizitezi acest site?" name="Foarte probabil" /> Foarte probabil</label>
+          <label><input type="radio" value="Care este probabilitatea sa vizitezi acest site?" name="Destul de probabil" /> Destul de probabil</label>
+
+          <label><input type="radio" value="Care este probabilitatea sa vizitezi acest site?" name="Asa si asa" /> Așa și așa</label>
+          <label><input type="radio" value="Care este probabilitatea sa vizitezi acest site?" name="Deloc probabil" /> Deloc probabil</label>
+        </div>
+        <p class="question"> Dacă  mai este ceva de menționat, transmite-ne aici!</p>
+        <textarea rows="5"></textarea>
+          <br>
+    
+	 <button type="submit" id="form-submit" class="btn">Trimite </button></a>
+         <br>
+		 <input type="reset" value="Refresh" />
+      </form>
+    </div>
+	
+  </body>
+</html>
